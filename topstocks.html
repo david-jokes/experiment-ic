@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Stocks - Investiční centrum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-content">
+        <div class="header-logo" onclick="window.location.href='fondy gemin.html'">Investiční centrum</div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Otevřít menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <div class="nav-item has-mega-menu">
+                <a href="#" class="nav-link">Kategorie</a>
+                <div class="mega-menu mega-menu-filters">
+                    <div class="mega-menu-columns">
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Dluhopisové fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Smíšené fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Akciové fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Nemovitostní fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>ETF</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Strukturované produkty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Frakční produkty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Seniorní a podřízené dluhopisy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Prémiové dluhopisy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Reverse convertibles</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Tržně obchodované dluhopisy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Participační certifikáty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Bonusové certifikáty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Turbo long/short</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Další produkty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Akcie</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Kryptoměny</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Drahé kovy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Prémiové vklady</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Ostatní</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Světový přehled</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Grafický přehled</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Kalendář dividend</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item has-mega-menu">
+                <a href="#" class="nav-link">Research</a>
+                <div class="mega-menu mega-menu-research">
+                    <div class="mega-menu-columns">
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Aktuální prognóza</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Všechny analýzy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Naše podcasty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Důležitá upozornění</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Analytický tým</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Zmínky v médiích</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Erste Group Research</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">Pro začátečníky</a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">Investice v Georgi</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Mobilní navigace (fullscreen overlay) -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Zavřít menu">
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="mobile-nav">
+        <div class="mobile-nav-item">
+            <div class="mobile-nav-link" data-mobile-nav="categories">Kategorie</div>
+            <div class="mobile-nav-submenu" id="mobileNavCategories">
+                <div class="mobile-nav-submenu-category">Fondy</div>
+                <div class="mobile-nav-submenu-item">Dluhopisové fondy</div>
+                <div class="mobile-nav-submenu-item">Smíšené fondy</div>
+                <div class="mobile-nav-submenu-item">Akciové fondy</div>
+                <div class="mobile-nav-submenu-item">Nemovitostní fondy</div>
+                <div class="mobile-nav-submenu-item">ETF</div>
+                <div class="mobile-nav-submenu-category">Strukturované produkty</div>
+                <div class="mobile-nav-submenu-item">Frakční produkty</div>
+                <div class="mobile-nav-submenu-item">Seniorní a podřízené dluhopisy</div>
+                <div class="mobile-nav-submenu-item">Prémiové dluhopisy</div>
+                <div class="mobile-nav-submenu-item">Reverse convertibles</div>
+                <div class="mobile-nav-submenu-item">Tržně obchodované dluhopisy</div>
+                <div class="mobile-nav-submenu-item">Participační certifikáty</div>
+                <div class="mobile-nav-submenu-item">Bonusové certifikáty</div>
+                <div class="mobile-nav-submenu-item">Turbo long/short</div>
+                <div class="mobile-nav-submenu-category">Další produkty</div>
+                <div class="mobile-nav-submenu-item">Akcie</div>
+                <div class="mobile-nav-submenu-item">Kryptoměny</div>
+                <div class="mobile-nav-submenu-item">Drahé kovy</div>
+                <div class="mobile-nav-submenu-item">Prémiové vklady</div>
+                <div class="mobile-nav-submenu-category">Ostatní</div>
+                <div class="mobile-nav-submenu-item">Světový přehled</div>
+                <div class="mobile-nav-submenu-item">Grafický přehled</div>
+                <div class="mobile-nav-submenu-item">Kalendář dividend</div>
+            </div>
+        </div>
+        <div class="mobile-nav-item">
+            <div class="mobile-nav-link" data-mobile-nav="research">Research</div>
+            <div class="mobile-nav-submenu" id="mobileNavResearch">
+                <div class="mobile-nav-submenu-item">Aktuální prognóza</div>
+                <div class="mobile-nav-submenu-item">Všechny analýzy</div>
+                <div class="mobile-nav-submenu-item">Naše podcasty</div>
+                <div class="mobile-nav-submenu-item">Důležitá upozornění</div>
+                <div class="mobile-nav-submenu-item">Analytický tým</div>
+                <div class="mobile-nav-submenu-item">Zmínky v médiích</div>
+                <div class="mobile-nav-submenu-item">Erste Group Research</div>
+            </div>
+        </div>
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link-simple">Pro začátečníkyd</a>
+        </div>
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link-simple">Investice v Georgi</a>
+        </div>
+    </nav>
+</div>
+
+<main class="fund-detail-main">
+    <div class="fund-detail-container">
+        <div class="fund-detail-layout">
+            <!-- Levá část -->
+            <div class="fund-detail-left">
+                <div class="fund-price-section">
+                    <div class="fund-price-header">
+                        <div class="fund-current-price" id="fundCurrentPrice">1 245,80</div>
+                        <span class="favorite-star-detail" id="favoriteStarDetail" data-fund-id="18">&#9734;</span>
+                    </div>
+                    <div class="fund-price-change" id="fundPriceChange">
+                        <span class="change-value" id="changeValue">+2,45%</span>
+                    </div>
+                </div>
+                
+                <div class="fund-aum">
+                    <span class="aum-label">Objem prostředků ve fondu:</span>
+                    <span class="aum-value" id="fundAUM">33,5M CZK</span>
+                </div>
+                
+                <div class="info-panel">
+                    <div class="panel-title">Info:</div>
+                    <div class="info-item">
+                        <span class="info-label">Manažer fondu:</span>
+                        <span class="info-value">Jan Novák</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Doba existence:</span>
+                        <span class="info-value">8 let, 3 měsíce</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Riziková váha:</span>
+                        <div class="info-risk-dots">
+                            <span class="risk-dot risk-dot-active"></span>
+                            <span class="risk-dot risk-dot-active"></span>
+                            <span class="risk-dot risk-dot-active"></span>
+                            <span class="risk-dot risk-dot-active"></span>
+                            <span class="risk-dot risk-dot-active"></span>
+                            <span class="risk-dot"></span>
+                            <span class="risk-dot"></span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Investiční horizont:</span>
+                        <span class="info-value">5 let+</span>
+                    </div>
+                </div>
+                
+                <div class="sectors-panel">
+                    <div class="panel-title">Sektory:</div>
+                    <div class="sectors-list">
+                        <span class="sector-tag" style="background-color: #2770F0;">Technologie</span>
+                        <span class="sector-tag" style="background-color: #008663;">Finance</span>
+                        <span class="sector-tag" style="background-color: #FE6231;">Zdravotnictví</span>
+                        <span class="sector-tag" style="background-color: #701D79;">Průmysl</span>
+                        <span class="sector-tag" style="background-color: #2770F0;">Spotřební zboží</span>
+                        <span class="sector-tag" style="background-color: #008663;">Energetika</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pravá část -->
+            <div class="fund-detail-right">
+                <div class="chart-section">
+                    <div class="chart-controls">
+                        <button class="chart-period-btn active" data-period="1m">1m</button>
+                        <button class="chart-period-btn" data-period="3m">3m</button>
+                        <button class="chart-period-btn" data-period="1y">1y</button>
+                        <button class="chart-period-btn" data-period="3y">3y</button>
+                        <button class="chart-period-btn" data-period="5y">5y</button>
+                        <button class="chart-period-btn" data-period="10y">10y</button>
+                        <button class="chart-period-btn" data-period="max">Max</button>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="priceChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="fund-structure-section">
+                    <div class="section-title">Struktura fondu</div>
+                    <div class="structure-grid-uniform">
+                        <div class="structure-item-uniform">
+                            <div class="structure-label">Země investice:</div>
+                            <div class="countries-list-compact">
+                                <div class="country-item-compact">
+                                    <span class="country-emoji">🇺🇸</span>
+                                    <span class="country-name">USA</span>
+                                    <span class="country-percent">45%</span>
+                                </div>
+                                <div class="country-item-compact">
+                                    <span class="country-emoji">🇪🇺</span>
+                                    <span class="country-name">Evropa</span>
+                                    <span class="country-percent">30%</span>
+                                </div>
+                                <div class="country-item-compact">
+                                    <span class="country-emoji">🇯🇵</span>
+                                    <span class="country-name">Asie</span>
+                                    <span class="country-percent">25%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="structure-item-uniform">
+                            <div class="structure-label">Rating aktiv:</div>
+                            <div class="structure-chart-uniform">
+                                <canvas id="ratingChart"></canvas>
+                                <div class="chart-legend-uniform">
+                                    <div class="legend-item"><span class="legend-color" style="background-color: #2770F0;"></span>AAA 15%</div>
+                                    <div class="legend-item"><span class="legend-color" style="background-color: #008663;"></span>AA 25%</div>
+                                    <div class="legend-item"><span class="legend-color" style="background-color: #FE6231;"></span>A 35%</div>
+                                    <div class="legend-item"><span class="legend-color" style="background-color: #701D79;"></span>BBB 25%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="structure-item-uniform">
+                            <div class="structure-label">Zastoupení:</div>
+                            <div class="structure-chart-uniform">
+                                <canvas id="allocationChart"></canvas>
+                                <div class="chart-legend-uniform">
+                                    <div class="legend-item"><span class="legend-color" style="background-color: #2770F0;"></span>Akcie 85%</div>
+                                    <div class="legend-item"><span class="legend-color" style="background-color: #008663;"></span>Dluhopisy 10%</div>
+                                    <div class="legend-item"><span class="legend-color" style="background-color: #FE6231;"></span>Alternativy 5%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fees-details-container">
+                    <div class="fees-section-compact">
+                        <div class="section-title">Poplatky</div>
+                        <div class="fees-grid">
+                            <div class="fee-item">
+                                <span class="fee-label">Vstupní:</span>
+                                <span class="fee-value">3%</span>
+                            </div>
+                            <div class="fee-item">
+                                <span class="fee-label">Správcovský:</span>
+                                <span class="fee-value">1,95% p.a.</span>
+                            </div>
+                            <div class="fee-item">
+                                <span class="fee-label">TER:</span>
+                                <span class="fee-value">2,19% p.a.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fund-details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Měna:</span>
+                            <span class="detail-value">CZK</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Majetek fondu:</span>
+                            <span class="detail-value">33,5M</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Minimální investice:</span>
+                            <span class="detail-value">100 Kč</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="holdings-section">
+                    <div class="section-title">Top 10 Holdings</div>
+                    <div class="holdings-list">
+                        <div class="holding-item">
+                            <div class="holding-rank">1</div>
+                            <div class="holding-name">Apple Inc.</div>
+                            <div class="holding-weight">8,5%</div>
+                        </div>
+                        <div class="holding-item">
+                            <div class="holding-rank">2</div>
+                            <div class="holding-name">Microsoft Corporation</div>
+                            <div class="holding-weight">7,2%</div>
+                        </div>
+                        <div class="holding-item">
+                            <div class="holding-rank">3</div>
+                            <div class="holding-name">Amazon.com Inc.</div>
+                            <div class="holding-weight">6,8%</div>
+                        </div>
+                        <div class="holding-item">
+                            <div class="holding-rank">4</div>
+                            <div class="holding-name">NVIDIA Corporation</div>
+                            <div class="holding-weight">5,9%</div>
+                        </div>
+                        <div class="holding-item">
+                            <div class="holding-rank">5</div>
+                            <div class="holding-name">Alphabet Inc. (Google)</div>
+                            <div class="holding-weight">5,4%</div>
+                        </div>
+                        <div class="holding-item">
+                            <div class="holding-rank">6</div>
+                            <div class="holding-name">Tesla Inc.</div>
+                            <div class="holding-weight">4,7%</div>
+                        </div>
+                        <div class="holding-item">
+                            <div class="holding-rank">7</div>
+                            <div class="holding-name">Meta Platforms Inc.</div>
+                            <div class="holding-weight">4,3%</div>
+                        </div>
+                        <div class="holding-item">
+                            <div class="holding-rank">8</div>
+                            <div class="holding-name">JPMorgan Chase & Co.</div>
+                            <div class="holding-weight">3,9%</div>
+                        </div>
+                        <div class="holding-item">
+                            <div class="holding-rank">9</div>
+                            <div class="holding-name">Visa Inc.</div>
+                            <div class="holding-weight">3,6%</div>
+                        </div>
+                        <div class="holding-item">
+                            <div class="holding-rank">10</div>
+                            <div class="holding-name">Johnson & Johnson</div>
+                            <div class="holding-weight">3,2%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="annual-reports-section">
+                    <div class="section-title">Výroční zprávy</div>
+                    <div class="ai-summary-box">
+                        <div class="ai-summary-header">
+                            <span class="ai-summary-icon">✨</span>
+                            <span class="ai-summary-title">AI Shrnutí výročních zpráv</span>
+                        </div>
+                        <div class="ai-summary-content">
+                            <p>Fond Top Stocks prokázal v posledních letech konzistentní výkon s průměrným ročním výnosem 7,86% od založení. V roce 2024 dosáhl fond solidního růstu 2,45% ve čtvrtém čtvrtletí, přičemž portfolio bylo úspěšně diverzifikováno napříč technologickými, finančními a zdravotnickými sektory. Klíčovým faktorem úspěchu bylo strategické zaměření na kvalitní akcie s dlouhodobým růstovým potenciálem.</p>
+                            <p>V roce 2023 se fond zaměřil na posílení pozic v sektoru umělé inteligence a obnovitelných zdrojů energie, což se ukázalo jako prozíravá strategie v kontextu globálního technologického vývoje. Navzdory volatilitě trhů v roce 2022 si fond udržel stabilní výkon díky pečlivému výběru akcií a aktivnímu řízení rizik.</p>
+                            <p>Dlouhodobě fond prokazuje schopnost adaptovat se na měnící se tržní podmínky a identifikovat investiční příležitosti v různých ekonomických cyklech. Portfolio je strukturováno s důrazem na diverzifikaci geografickou (USA 45%, Evropa 30%, Asie 25%) i sektorovou, což poskytuje solidní základ pro budoucí růst.</p>
+                        </div>
+                    </div>
+                    <div class="reports-compact">
+                        <div class="reports-years-grid">
+                            <a href="#" class="report-year-link">2024</a>
+                            <a href="#" class="report-year-link">2023</a>
+                            <a href="#" class="report-year-link">2022</a>
+                            <a href="#" class="report-year-link">2021</a>
+                            <a href="#" class="report-year-link">2020</a>
+                            <a href="#" class="report-year-link">2019</a>
+                            <a href="#" class="report-year-link">2018</a>
+                            <a href="#" class="report-year-link">2017</a>
+                            <a href="#" class="report-year-link">2016</a>
+                            <a href="#" class="report-year-link">2015</a>
+                            <a href="#" class="report-year-link">2014</a>
+                            <a href="#" class="report-year-link">2013</a>
+                            <a href="#" class="report-year-link">2012</a>
+                            <a href="#" class="report-year-link">2011</a>
+                            <a href="#" class="report-year-link">2010</a>
+                            <a href="#" class="report-year-link">2009</a>
+                            <a href="#" class="report-year-link">2008</a>
+                            <a href="#" class="report-year-link">2007</a>
+                            <a href="#" class="report-year-link">2006</a>
+                            <a href="#" class="report-year-link">2005</a>
+                            <a href="#" class="report-year-link">2004</a>
+                            <a href="#" class="report-year-link">2003</a>
+                            <a href="#" class="report-year-link">2002</a>
+                            <a href="#" class="report-year-link">2001</a>
+                            <a href="#" class="report-year-link">2000</a>
+                            <a href="#" class="report-year-link">1999</a>
+                            <a href="#" class="report-year-link">1998</a>
+                            <a href="#" class="report-year-link">1997</a>
+                            <a href="#" class="report-year-link">1996</a>
+                            <a href="#" class="report-year-link">1995</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+<script>
+// Načtení dat fondu
+async function loadFundData() {
+    try {
+        const response = await fetch('./funds-data.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        const topStocksFund = data.find(f => f.name === 'Top Stocks');
+        
+        if (topStocksFund) {
+            // Aktualizace ceny a změny (simulace aktuální ceny na základě sparkline)
+            const lastSparklineValue = topStocksFund.sparkline[topStocksFund.sparkline.length - 1];
+            const firstSparklineValue = topStocksFund.sparkline[0];
+            const changePercent = ((lastSparklineValue - firstSparklineValue) / firstSparklineValue * 100).toFixed(2);
+            const currentPrice = (1000 * (lastSparklineValue / 100)).toFixed(2);
+            
+            // Formátování ceny s mezerami pro tisícové oddělovače
+            const formattedPrice = parseFloat(currentPrice).toLocaleString('cs-CZ', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            document.getElementById('fundCurrentPrice').textContent = formattedPrice.replace('.', ',');
+            const changeElement = document.getElementById('changeValue');
+            changeElement.textContent = (changePercent >= 0 ? '+' : '') + changePercent + '%';
+            if (changePercent < 0) {
+                changeElement.classList.add('negative');
+            }
+            
+            // Aktualizace AuM
+            const aumValue = topStocksFund.aum >= 1000 ? (topStocksFund.aum / 1000).toFixed(1) + 'B' : topStocksFund.aum + 'M';
+            document.getElementById('fundAUM').textContent = aumValue + ' CZK';
+        }
+    } catch (error) {
+        console.warn('Nepodařilo se načíst data fondu:', error);
+    }
+}
+
+// Inicializace mobilního menu
+function initializePage() {
+    initMobileMenu();
+    initMegaMenuIcons();
+    initChart();
+    loadFundData();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializePage);
+} else {
+    initializePage();
+}
+
+// Funkce pro graf
+function initChart() {
+    const canvas = document.getElementById('priceChart');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const container = canvas.parentElement;
+    
+    // Nastavit velikost canvasu
+    function resizeCanvas() {
+        if (container && container.clientWidth > 0) {
+            canvas.width = container.clientWidth;
+            canvas.height = 300;
+        }
+    }
+    
+    window.addEventListener('resize', () => {
+        resizeCanvas();
+        drawChart();
+    });
+    
+    // Generování historických dat pro graf
+    function generateHistoricalData(period) {
+        const data = [];
+        const now = new Date();
+        let days, startValue, endValue;
+        
+        switch(period) {
+            case '1m':
+                days = 30;
+                startValue = 1200;
+                endValue = 1245.80;
+                break;
+            case '3m':
+                days = 90;
+                startValue = 1150;
+                endValue = 1245.80;
+                break;
+            case '1y':
+                days = 365;
+                startValue = 1000;
+                endValue = 1245.80;
+                break;
+            case '3y':
+                days = 1095;
+                startValue = 850;
+                endValue = 1245.80;
+                break;
+            case '5y':
+                days = 1825;
+                startValue = 750;
+                endValue = 1245.80;
+                break;
+            case '10y':
+                days = 3650;
+                startValue = 500;
+                endValue = 1245.80;
+                break;
+            case 'max':
+                days = 3000;
+                startValue = 550;
+                endValue = 1245.80;
+                break;
+            default:
+                days = 365;
+                startValue = 1000;
+                endValue = 1245.80;
+        }
+        
+        const points = Math.min(days, 200); // Max 200 bodů pro výkon
+        const step = days / points;
+        
+        for (let i = 0; i <= points; i++) {
+            const dayOffset = Math.floor(i * step);
+            const date = new Date(now);
+            date.setDate(date.getDate() - (days - dayOffset));
+            
+            // Simulace ceny s trendem a volatilitou
+            const progress = i / points;
+            const trend = startValue + (endValue - startValue) * progress;
+            const volatility = Math.sin(progress * Math.PI * 4) * 50 * (1 - progress * 0.5);
+            const random = (Math.random() - 0.5) * 30;
+            const value = Math.max(400, trend + volatility + random);
+            
+            data.push({ date, value: parseFloat(value.toFixed(2)) });
+        }
+        
+        return data;
+    }
+    
+    const staticChartData = {
+        '1m': generateHistoricalData('1m'),
+        '3m': generateHistoricalData('3m'),
+        '1y': generateHistoricalData('1y'),
+        '3y': generateHistoricalData('3y'),
+        '5y': generateHistoricalData('5y'),
+        '10y': generateHistoricalData('10y'),
+        'max': generateHistoricalData('max')
+    };
+    
+    let currentData = staticChartData['1y'];
+    
+    function drawChart() {
+        if (!currentData || currentData.length === 0) {
+            currentData = staticChartData['1y'];
+        }
+        
+        // Zajistit, že canvas má správnou velikost
+        if (!container || container.clientWidth === 0) {
+            setTimeout(drawChart, 100);
+            return;
+        }
+        
+        if (canvas.width !== container.clientWidth) {
+            canvas.width = container.clientWidth;
+        }
+        if (canvas.height !== 300) {
+            canvas.height = 300;
+        }
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        const padding = 40;
+        const chartWidth = canvas.width - padding * 2;
+        const chartHeight = canvas.height - padding * 2;
+        
+        if (chartWidth <= 0 || chartHeight <= 0) {
+            return;
+        }
+        
+        const values = currentData.map(d => d.value);
+        const minValue = Math.min(...values);
+        const maxValue = Math.max(...values);
+        const range = maxValue - minValue || 1;
+        
+        // Mřížka
+        ctx.strokeStyle = '#f2f2f2';
+        ctx.lineWidth = 1;
+        for (let i = 0; i <= 5; i++) {
+            const y = padding + (chartHeight / 5) * i;
+            ctx.beginPath();
+            ctx.moveTo(padding, y);
+            ctx.lineTo(canvas.width - padding, y);
+            ctx.stroke();
+        }
+        
+        // Grafická čára
+        ctx.strokeStyle = '#0071e3';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        
+        currentData.forEach((point, index) => {
+            const x = padding + (chartWidth / (currentData.length - 1)) * index;
+            const y = padding + chartHeight - ((point.value - minValue) / range) * chartHeight;
+            
+            if (index === 0) {
+                ctx.moveTo(x, y);
+            } else {
+                ctx.lineTo(x, y);
+            }
+        });
+        
+        ctx.stroke();
+        
+        // Vyplnění pod čarou
+        ctx.fillStyle = 'rgba(0, 113, 227, 0.1)';
+        ctx.beginPath();
+        ctx.moveTo(padding, padding + chartHeight);
+        currentData.forEach((point, index) => {
+            const x = padding + (chartWidth / (currentData.length - 1)) * index;
+            const y = padding + chartHeight - ((point.value - minValue) / range) * chartHeight;
+            ctx.lineTo(x, y);
+        });
+        ctx.lineTo(canvas.width - padding, padding + chartHeight);
+        ctx.closePath();
+        ctx.fill();
+    }
+    
+    // Event listenery pro tlačítka období
+    document.querySelectorAll('.chart-period-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.chart-period-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const period = btn.getAttribute('data-period');
+            currentData = staticChartData[period] || staticChartData['1y'];
+            drawChart();
+        });
+    });
+    
+    // Zajistit, že se graf nakreslí po načtení stránky
+    function initChartAfterLoad() {
+        if (!container) {
+            setTimeout(initChartAfterLoad, 50);
+            return;
+        }
+        
+        if (container.clientWidth === 0) {
+            setTimeout(initChartAfterLoad, 50);
+            return;
+        }
+        
+        resizeCanvas();
+        drawChart();
+    }
+    
+    // Inicializace grafu - počkat na načtení
+    setTimeout(() => {
+        initChartAfterLoad();
+    }, 100);
+    
+    // Také zkusit po úplném načtení stránky
+    window.addEventListener('load', () => {
+        setTimeout(initChartAfterLoad, 50);
+    });
+    
+    // Inicializace koláčových grafů pro strukturu fondu
+    function initChartsAfterLoad() {
+        initStructureCharts();
+    }
+    
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(initChartsAfterLoad, 300);
+        });
+    } else {
+        setTimeout(initChartsAfterLoad, 300);
+    }
+    
+    window.addEventListener('load', () => {
+        setTimeout(initChartsAfterLoad, 200);
+    });
+}
+
+// Funkce pro koláčové grafy struktury fondu
+function initStructureCharts() {
+    // Země investice
+    drawPieChart('countriesChart', [
+        { label: 'USA', value: 45, color: '#2770F0' },
+        { label: 'Evropa', value: 30, color: '#008663' },
+        { label: 'Asie', value: 25, color: '#FE6231' }
+    ]);
+    
+    // Rating aktiv
+    drawPieChart('ratingChart', [
+        { label: 'AAA', value: 15, color: '#2770F0' },
+        { label: 'AA', value: 25, color: '#008663' },
+        { label: 'A', value: 35, color: '#FE6231' },
+        { label: 'BBB', value: 25, color: '#701D79' }
+    ]);
+    
+    // Zastoupení
+    drawPieChart('allocationChart', [
+        { label: 'Akcie', value: 85, color: '#2770F0' },
+        { label: 'Dluhopisy', value: 10, color: '#008663' },
+        { label: 'Alternativy', value: 5, color: '#FE6231' }
+    ]);
+}
+
+// Inicializace hvězdičky pro oblíbené
+function initFavoriteStar() {
+    const favoriteStar = document.getElementById('favoriteStarDetail');
+    if (!favoriteStar) return;
+    
+    // Načíst oblíbené z localStorage nebo použít prázdný Set
+    let favoriteFunds = new Set();
+    try {
+        const stored = localStorage.getItem('favoriteFunds');
+        if (stored) {
+            favoriteFunds = new Set(JSON.parse(stored));
+        }
+    } catch (e) {
+        console.warn('Nepodařilo se načíst oblíbené fondy:', e);
+    }
+    
+    const fundId = parseInt(favoriteStar.getAttribute('data-fund-id'));
+    const isFavorite = favoriteFunds.has(fundId);
+    favoriteStar.innerHTML = isFavorite ? '&#9733;' : '&#9734;';
+    
+    favoriteStar.addEventListener('click', () => {
+        if (favoriteFunds.has(fundId)) {
+            favoriteFunds.delete(fundId);
+            favoriteStar.innerHTML = '&#9734;';
+        } else {
+            favoriteFunds.add(fundId);
+            favoriteStar.innerHTML = '&#9733;';
+        }
+        
+        // Uložit do localStorage
+        try {
+            localStorage.setItem('favoriteFunds', JSON.stringify(Array.from(favoriteFunds)));
+        } catch (e) {
+            console.warn('Nepodařilo se uložit oblíbené fondy:', e);
+        }
+    });
+}
+
+// Inicializace po načtení
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFavoriteStar);
+} else {
+    initFavoriteStar();
+}
+
+function drawPieChart(canvasId, data) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    // Zvětšit grafy rating aktiv a zastoupení, aby matchovaly výšku země investice
+    const size = (canvasId === 'ratingChart' || canvasId === 'allocationChart') ? 100 : 70;
+    canvas.width = size;
+    canvas.height = size;
+    
+    const centerX = size / 2;
+    const centerY = size / 2;
+    const radius = size / 2 - 8;
+    
+    let currentAngle = -Math.PI / 2; // Začínáme nahoře
+    
+    data.forEach(item => {
+        const sliceAngle = (item.value / 100) * 2 * Math.PI;
+        
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.arc(centerX, centerY, radius, currentAngle, currentAngle + sliceAngle);
+        ctx.closePath();
+        ctx.fillStyle = item.color;
+        ctx.fill();
+        
+        // Okraj
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        
+        currentAngle += sliceAngle;
+    });
+}
+</script>
+</body>
+</html>
+

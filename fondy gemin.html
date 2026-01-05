@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investiční centrum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-content">
+        <div class="header-logo">Investiční centrum</div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Otevřít menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <div class="nav-item has-mega-menu">
+                <a href="#" class="nav-link">Kategorie</a>
+                <div class="mega-menu mega-menu-filters">
+                    <div class="mega-menu-columns">
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Dluhopisové fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Smíšené fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Akciové fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Nemovitostní fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>ETF</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Strukturované produkty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Frakční produkty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Seniorní a podřízené dluhopisy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Prémiové dluhopisy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Reverse convertibles</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Tržně obchodované dluhopisy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Participační certifikáty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Bonusové certifikáty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Turbo long/short</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Další produkty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Akcie</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Kryptoměny</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Drahé kovy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Prémiové vklady</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Ostatní</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Světový přehled</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Grafický přehled</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Kalendář dividend</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item has-mega-menu">
+                <a href="#" class="nav-link">Research</a>
+                <div class="mega-menu mega-menu-research">
+                    <div class="mega-menu-columns">
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Aktuální prognóza</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Všechny analýzy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Naše podcasty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Důležitá upozornění</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Analytický tým</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Zmínky v médiích</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Erste Group Research</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">Pro začátečníky</a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">Investice v Georgi</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Mobilní navigace (fullscreen overlay) -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Zavřít menu">
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="mobile-nav">
+        <div class="mobile-nav-item">
+            <div class="mobile-nav-link" data-mobile-nav="categories">Kategorie</div>
+            <div class="mobile-nav-submenu" id="mobileNavCategories">
+                <div class="mobile-nav-submenu-category">Fondy</div>
+                <div class="mobile-nav-submenu-item">Dluhopisové fondy</div>
+                <div class="mobile-nav-submenu-item">Smíšené fondy</div>
+                <div class="mobile-nav-submenu-item">Akciové fondy</div>
+                <div class="mobile-nav-submenu-item">Nemovitostní fondy</div>
+                <div class="mobile-nav-submenu-item">ETF</div>
+                <div class="mobile-nav-submenu-category">Strukturované produkty</div>
+                <div class="mobile-nav-submenu-item">Frakční produkty</div>
+                <div class="mobile-nav-submenu-item">Seniorní a podřízené dluhopisy</div>
+                <div class="mobile-nav-submenu-item">Prémiové dluhopisy</div>
+                <div class="mobile-nav-submenu-item">Reverse convertibles</div>
+                <div class="mobile-nav-submenu-item">Tržně obchodované dluhopisy</div>
+                <div class="mobile-nav-submenu-item">Participační certifikáty</div>
+                <div class="mobile-nav-submenu-item">Bonusové certifikáty</div>
+                <div class="mobile-nav-submenu-item">Turbo long/short</div>
+                <div class="mobile-nav-submenu-category">Další produkty</div>
+                <div class="mobile-nav-submenu-item">Akcie</div>
+                <div class="mobile-nav-submenu-item">Kryptoměny</div>
+                <div class="mobile-nav-submenu-item">Drahé kovy</div>
+                <div class="mobile-nav-submenu-item">Prémiové vklady</div>
+                <div class="mobile-nav-submenu-category">Ostatní</div>
+                <div class="mobile-nav-submenu-item">Světový přehled</div>
+                <div class="mobile-nav-submenu-item">Grafický přehled</div>
+                <div class="mobile-nav-submenu-item">Kalendář dividend</div>
+            </div>
+        </div>
+        <div class="mobile-nav-item">
+            <div class="mobile-nav-link" data-mobile-nav="research">Research</div>
+            <div class="mobile-nav-submenu" id="mobileNavResearch">
+                <div class="mobile-nav-submenu-item">Aktuální prognóza</div>
+                <div class="mobile-nav-submenu-item">Všechny analýzy</div>
+                <div class="mobile-nav-submenu-item">Naše podcasty</div>
+                <div class="mobile-nav-submenu-item">Důležitá upozornění</div>
+                <div class="mobile-nav-submenu-item">Analytický tým</div>
+                <div class="mobile-nav-submenu-item">Zmínky v médiích</div>
+                <div class="mobile-nav-submenu-item">Erste Group Research</div>
+            </div>
+        </div>
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link-simple">Pro začátečníkyd</a>
+        </div>
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link-simple">Investice v Georgi</a>
+        </div>
+    </nav>
+</div>
+
+<section class="hero-section">
+    <div class="hero-content">
+        <div class="news-grid">
+            <div class="news-card" style="background-color: #2770F0;">
+                <div class="news-text">ČNB varuje před investiční kampaní „Program zrychlení bohatství". Šíří se na WhatsAppu.</div>
+                <div class="news-date">5.12.2025</div>
+            </div>
+            <div class="news-card" style="background-color: #008663;">
+                <div class="news-text">Nabízíme Reverse Convertible SAP s pevným výnosem 9,5 % za 1 rok vyplacený vždy, nezávisle na vývoji podkladového aktiva (akcie společnosti SAP SE).</div>
+                <div class="news-date">22.12.2025</div>
+            </div>
+            <div class="news-card news-card-hidden" style="background-color: #FE6231;">
+                <div class="news-text">Nové investiční příležitosti v sektoru obnovitelných zdrojů energie. Fond Green Energy Fund dosáhl výnosu 12,3 % za poslední rok.</div>
+                <div class="news-date">15.12.2025</div>
+            </div>
+            <div class="news-card news-card-hidden" style="background-color: #701D79;">
+                <div class="news-text">Rozšíření portfolia o fondy zaměřené na technologické společnosti. Index Technology Growth Fund překonal očekávání s 18,7% výnosem.</div>
+                <div class="news-date">10.12.2025</div>
+            </div>
+            <div class="news-card fear-greed-card news-card-hidden" id="fearGreedCard">
+                <div class="fear-greed-title">Fear & Greed Index</div>
+                <div class="fear-greed-mood" id="fearGreedMood"></div>
+                <div class="fear-greed-value" id="fearGreedValue">45</div>
+            </div>
+            <button class="news-expand-btn" id="newsExpandBtn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<div class="indices-panel" id="indicesPanel">
+    <div class="indices-container-wrapper" id="indicesContainerWrapper">
+        <!-- Obsah se načte z JavaScript -->
+    </div>
+</div>
+
+<div class="control-bar">
+    <div class="control-bar-content">
+        <div class="control-left">
+            <label for="performanceSelect" class="control-label">Výpočet nákladovosti podle:</label>
+            <select id="performanceSelect" class="control-select">
+                <option value="ret5">5y p.a.</option>
+                <option value="ret10" selected>10y p.a.</option>
+                <option value="retAll">Od založení</option>
+            </select>
+            <button id="favoritesBtn" class="favorites-btn">Oblíbené</button>
+        </div>
+        <div class="control-right">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Hledej fondy, akcie a další">
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <div class="table-wrapper">
+        <table id="fundsTable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th onclick="sortTable(0)">#</th>
+                    <th onclick="sortTable(1)">Název</th>
+                    <th onclick="sortTable(2)">Firma</th>
+                    <th onclick="sortTable(3)" data-tooltip="Průměrný roční výnos fondu za posledních 5 let.">5y p.a.</th>
+                    <th onclick="sortTable(4)" data-tooltip="Průměrný roční výnos fondu za posledních 10 let.">10y p.a.</th>
+                    <th onclick="sortTable(5)" data-tooltip="Celkový průměrný roční výnos od data založení fondu.">Od zal.</th>
+                    <th onclick="sortTable(6)" data-tooltip="Maximální růst v %">Max+</th>
+                    <th onclick="sortTable(7)" data-tooltip="Maximální pokles v %">Max-</th>
+                    <th onclick="sortTable(8)" data-tooltip="Celkový objem majetku pod správou fondu (Assets Under Management).">AuM</th>
+                    <th onclick="sortTable(9)" data-tooltip="Celková roční nákladovost fondu (známá jako TER).">Poplatek p.a.</th>
+                    <th onclick="sortTable(10)" data-tooltip="Jak velkou část výkonu vám každý rok sebere správce fondu.">Cena nákl.</th>
+                    <th>Vývoj (5y)</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<div class="ai-button" id="aiButton">
+    <div class="ai-close-btn" id="aiCloseBtn">✕</div>
+    <div class="ai-header">
+        <span class="ai-icon">✨</span>
+        <span class="ai-text">Zeptejte se umělé inteligence</span>
+    </div>
+    <div class="ai-response" id="aiResponse"></div>
+    <div class="ai-options" id="aiOptions">
+        <div class="ai-option" data-question="market">📊 Jaká je teď situace na trhu?</div>
+        <div class="ai-option" data-question="interesting">🔮 Chystáte něco zajímavého?</div>
+        <div class="ai-option" data-question="warning">⚠️ Na co si dávat při investování pozor?</div>
+        <div class="ai-option" data-question="high">⚡ Nejsou trhy moc vysoko?</div>
+        <div class="ai-option" data-question="sell">📉 Jsem v mínusu, mám prodávat?</div>
+        <div class="ai-option" data-question="crypto">📈 Dávají smysl kryptoměny?</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

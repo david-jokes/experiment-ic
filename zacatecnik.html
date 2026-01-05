@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro začátečníky - Investiční centrum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-content">
+        <a href="fondy gemin.html" class="header-logo">Investiční centrum</a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Otevřít menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <div class="nav-item has-mega-menu">
+                <a href="#" class="nav-link">Kategorie</a>
+                <div class="mega-menu mega-menu-filters">
+                    <div class="mega-menu-columns">
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Dluhopisové fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Smíšené fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Akciové fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Nemovitostní fondy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>ETF</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Strukturované produkty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Frakční produkty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Seniorní a podřízené dluhopisy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Prémiové dluhopisy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Reverse convertibles</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Tržně obchodované dluhopisy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Participační certifikáty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Bonusové certifikáty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Turbo long/short</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Další produkty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Akcie</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Kryptoměny</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Drahé kovy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Prémiové vklady</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-category">Ostatní</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Světový přehled</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Grafický přehled</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Kalendář dividend</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item has-mega-menu">
+                <a href="#" class="nav-link">Research</a>
+                <div class="mega-menu mega-menu-research">
+                    <div class="mega-menu-columns">
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Aktuální prognóza</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Všechny analýzy</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Naše podcasty</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Důležitá upozornění</div>
+                        </div>
+                        <div class="mega-menu-column">
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Analytický tým</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Zmínky v médiích</div>
+                            <div class="mega-menu-item"><span class="menu-item-icon"></span>Erste Group Research</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="zacatecnik.html" class="nav-link">Pro začátečníky</a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link">Investice v Georgi</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Mobilní navigace (fullscreen overlay) -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Zavřít menu">
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="mobile-nav">
+        <div class="mobile-nav-item">
+            <div class="mobile-nav-link" data-mobile-nav="categories">Kategorie</div>
+            <div class="mobile-nav-submenu" id="mobileNavCategories">
+                <div class="mobile-nav-submenu-category">Fondy</div>
+                <div class="mobile-nav-submenu-item">Dluhopisové fondy</div>
+                <div class="mobile-nav-submenu-item">Smíšené fondy</div>
+                <div class="mobile-nav-submenu-item">Akciové fondy</div>
+                <div class="mobile-nav-submenu-item">Nemovitostní fondy</div>
+                <div class="mobile-nav-submenu-item">ETF</div>
+                <div class="mobile-nav-submenu-category">Strukturované produkty</div>
+                <div class="mobile-nav-submenu-item">Frakční produkty</div>
+                <div class="mobile-nav-submenu-item">Seniorní a podřízené dluhopisy</div>
+                <div class="mobile-nav-submenu-item">Prémiové dluhopisy</div>
+                <div class="mobile-nav-submenu-item">Reverse convertibles</div>
+                <div class="mobile-nav-submenu-item">Tržně obchodované dluhopisy</div>
+                <div class="mobile-nav-submenu-item">Participační certifikáty</div>
+                <div class="mobile-nav-submenu-item">Bonusové certifikáty</div>
+                <div class="mobile-nav-submenu-item">Turbo long/short</div>
+                <div class="mobile-nav-submenu-category">Další produkty</div>
+                <div class="mobile-nav-submenu-item">Akcie</div>
+                <div class="mobile-nav-submenu-item">Kryptoměny</div>
+                <div class="mobile-nav-submenu-item">Drahé kovy</div>
+                <div class="mobile-nav-submenu-item">Prémiové vklady</div>
+                <div class="mobile-nav-submenu-category">Ostatní</div>
+                <div class="mobile-nav-submenu-item">Světový přehled</div>
+                <div class="mobile-nav-submenu-item">Grafický přehled</div>
+                <div class="mobile-nav-submenu-item">Kalendář dividend</div>
+            </div>
+        </div>
+        <div class="mobile-nav-item">
+            <div class="mobile-nav-link" data-mobile-nav="research">Research</div>
+            <div class="mobile-nav-submenu" id="mobileNavResearch">
+                <div class="mobile-nav-submenu-item">Aktuální prognóza</div>
+                <div class="mobile-nav-submenu-item">Všechny analýzy</div>
+                <div class="mobile-nav-submenu-item">Naše podcasty</div>
+                <div class="mobile-nav-submenu-item">Důležitá upozornění</div>
+                <div class="mobile-nav-submenu-item">Analytický tým</div>
+                <div class="mobile-nav-submenu-item">Zmínky v médiích</div>
+                <div class="mobile-nav-submenu-item">Erste Group Research</div>
+            </div>
+        </div>
+        <div class="mobile-nav-item">
+            <a href="zacatecnik.html" class="mobile-nav-link-simple">Pro začátečníky</a>
+        </div>
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link-simple">Investice v Georgi</a>
+        </div>
+    </nav>
+</div>
+
+<section class="beginner-section">
+    <div class="beginner-content">
+        <h1 class="beginner-title">Hlavní obavy</h1>
+        <div class="beginner-layout">
+            <div class="bento-grid">
+                <div class="bento-box" style="background-color: #2770F0;">
+                    <div class="bento-title">Na investice nemám dost peněz</div>
+                    <div class="bento-description">Investovat můžete i s malými částkami. Mnoho fondů umožňuje začít s pravidelnými měsíčními vklady od několika set korun.</div>
+                </div>
+                <div class="bento-box" style="background-color: #008663;">
+                    <div class="bento-title">Je to moc rizikové</div>
+                    <div class="bento-description">Riziko můžete řídit výběrem vhodných produktů. Konzervativní fondy nabízejí nižší riziko, zatímco diverzifikace snižuje celkové riziko portfolia.</div>
+                </div>
+                <div class="bento-box" style="background-color: #FE6231;">
+                    <div class="bento-title">Nerozumím tomu</div>
+                    <div class="bento-description">Investování nemusí být složité. Začít můžete s jednoduchými produkty jako jsou indexové fondy nebo ETF, které kopírují vývoj trhu.</div>
+                </div>
+                <div class="bento-box" style="background-color: #701D79;">
+                    <div class="bento-title">Bojím se, že udělám velkou chybu</div>
+                    <div class="bento-description">Začátečníci mohou využít odborné poradenství nebo automatizované investiční platformy, které pomáhají s výběrem vhodných produktů.</div>
+                </div>
+                <div class="bento-box" style="background-color: #2770F0;">
+                    <div class="bento-title">Teď není správný čas na investování</div>
+                    <div class="bento-description">Časování trhu je velmi obtížné i pro profesionály. Pravidelné investování v průběhu času (dollar-cost averaging) pomáhá vyhladit výkyvy trhu.</div>
+                </div>
+            </div>
+            <div class="beginner-chat">
+                <div class="ai-header">
+                    <span class="ai-icon">✨</span>
+                    <span class="ai-text">Zeptejte se umělé inteligence</span>
+                </div>
+                <div class="ai-response" id="beginnerAiResponse"></div>
+                <div class="ai-options" id="beginnerAiOptions">
+                    <div class="ai-option" data-question="money">💰 Na investice nemám dost peněz</div>
+                    <div class="ai-option" data-question="risk">⚠️ Je to moc rizikové</div>
+                    <div class="ai-option" data-question="understand">🤔 Nerozumím tomu</div>
+                    <div class="ai-option" data-question="mistake">😰 Bojím se, že udělám velkou chybu</div>
+                    <div class="ai-option" data-question="timing">⏰ Teď není správný čas na investování</div>
+                </div>
+                <div class="beginner-chat-input-container">
+                    <div class="beginner-chat-input-wrapper">
+                        <input type="text" class="beginner-chat-input" placeholder="Napište svou zprávu..." id="beginnerChatInput">
+                        <button class="beginner-chat-send-btn" id="beginnerChatSendBtn" aria-label="Odeslat">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works-section">
+    <div class="how-it-works-content">
+        <h2 class="how-it-works-title">Kdy jste se narodil/a?</h2>
+        <div class="birth-year-container">
+            <input type="number" id="birthYear" class="birth-year-input" placeholder="Např. 1990" min="1900" max="2010">
+        </div>
+        <div class="calculation-result" id="calculationResult"></div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+<script>
+    // Mobilní navigace
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileNavOverlay.classList.add('active');
+        });
+    }
+
+    if (mobileMenuClose) {
+        mobileMenuClose.addEventListener('click', () => {
+            mobileNavOverlay.classList.remove('active');
+        });
+    }
+
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const target = this.getAttribute('data-mobile-nav');
+            if (target) {
+                const submenu = document.getElementById('mobileNav' + target.charAt(0).toUpperCase() + target.slice(1));
+                if (submenu) {
+                    this.classList.toggle('active');
+                    submenu.classList.toggle('active');
+                }
+            }
+        });
+    });
+
+    // Výpočet investice
+    const birthYearInput = document.getElementById('birthYear');
+    const calculationResult = document.getElementById('calculationResult');
+
+    function calculateInvestment(birthYear) {
+        const currentYear = new Date().getFullYear();
+        const currentMonth = new Date().getMonth();
+        const yearsPassed = currentYear - birthYear;
+        const monthsPassed = yearsPassed * 12 + currentMonth;
+        
+        const monthlyPayment = 1000;
+        const annualRate = 0.09;
+        const monthlyRate = annualRate / 12;
+        
+        // Výpočet budoucí hodnoty anuity (složené úročení)
+        // FV = PMT * (((1 + r)^n - 1) / r)
+        function futureValueAnuity(pmt, r, n) {
+            if (r === 0) {
+                return pmt * n;
+            }
+            return pmt * (((Math.pow(1 + r, n) - 1) / r));
+        }
+        
+        // Hodnota od narození do teď (pokud by rodiče investovali)
+        const valueNow = futureValueAnuity(monthlyPayment, monthlyRate, monthsPassed);
+        
+        // Kolik rodiče naposílali celkem
+        const parentsTotalPaid = monthsPassed * monthlyPayment;
+        
+        // Pokud by člověk pokračoval dalších 20 let:
+        // 1. Hodnota na účtě teď vyroste se složeným úročením
+        const valueNowGrown = valueNow * Math.pow(1 + monthlyRate, 20 * 12);
+        
+        // 2. Navíc přidá každý měsíc 1000 Kč, které také rostou
+        const monthsFuture = 20 * 12;
+        const futureContributions = futureValueAnuity(monthlyPayment, monthlyRate, monthsFuture);
+        
+        // Celková hodnota za 20 let
+        const valueIn20Years = valueNowGrown + futureContributions;
+        
+        // Kolik on naposílal za 20 let
+        const userTotalPaid = monthsFuture * monthlyPayment;
+        
+        // Celkové vklady (rodiče + on)
+        const totalPaid = parentsTotalPaid + userTotalPaid;
+        
+        // Za kolik to složené úročení vyrostlo
+        const growthFromInterest = valueIn20Years - totalPaid;
+        
+        return {
+            valueNow: Math.round(valueNow),
+            valueIn20Years: Math.round(valueIn20Years),
+            parentsTotalPaid: parentsTotalPaid,
+            userTotalPaid: userTotalPaid,
+            totalPaid: totalPaid,
+            growthFromInterest: Math.round(growthFromInterest),
+            yearsPassed: yearsPassed
+        };
+    }
+
+    function formatNumber(num) {
+        return new Intl.NumberFormat('cs-CZ').format(num);
+    }
+
+    function updateCalculation() {
+        const birthYear = parseInt(birthYearInput.value);
+        const currentYear = new Date().getFullYear();
+        
+        if (!birthYear || birthYear < 1900 || birthYear > currentYear) {
+            calculationResult.classList.add('hidden');
+            return;
+        }
+        
+        const result = calculateInvestment(birthYear);
+        calculationResult.classList.remove('hidden');
+        
+        calculationResult.innerHTML = `
+            <p>Pokud by vám rodiče začali investovat peníze v roce vašeho narození <span class="highlight">1000 Kč měsíčně</span>, dnes byste měli <span class="highlight">${formatNumber(result.valueNow)} Kč</span>.</p>
+            <p style="margin-top: 12px;">To je hezký dárek, ne? A kdybyste to samé dělali vy teď, tak za 20 let máte <span class="highlight">${formatNumber(result.valueIn20Years)} Kč</span>.</p>
+            <p style="margin-top: 12px;">Rodiče naposílali celkem <span class="highlight">${formatNumber(result.parentsTotalPaid)} Kč</span>, vy byste naposílali dalších <span class="highlight">${formatNumber(result.userTotalPaid)} Kč</span>. Složené úročení vám za to přidalo <span class="highlight">${formatNumber(result.growthFromInterest)} Kč</span>.</p>
+        `;
+    }
+
+    if (birthYearInput) {
+        birthYearInput.addEventListener('input', updateCalculation);
+        birthYearInput.addEventListener('change', updateCalculation);
+    }
+</script>
+</body>
+</html>
+

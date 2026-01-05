@@ -1,0 +1,478 @@
+[
+  {
+    "id": 1,
+    "name": "Erste Bond Euro Corporate VT",
+    "provider": "ČS",
+    "ret5": -2.04,
+    "ret10": -0.38,
+    "retAll": 1.26,
+    "maxPlus": 20.8,
+    "maxMinus": -16.5,
+    "aum": 769293,
+    "ter": 0.76,
+    "sparkline": [
+      100.0,
+      99.13,
+      99.1,
+      96.17,
+      94.87
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Erste Stock Europe Emerging VT",
+    "provider": "ČS",
+    "ret5": 11.4,
+    "ret10": 6.04,
+    "retAll": 4.34,
+    "maxPlus": 192.28,
+    "maxMinus": -74.79,
+    "aum": 73534,
+    "ter": 2.11,
+    "sparkline": [
+      100.0,
+      103.56,
+      114.95,
+      123.54,
+      134.07
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Erste Stock Istanbul VT",
+    "provider": "ČS",
+    "ret5": 11.93,
+    "ret10": -0.45,
+    "retAll": 0.22,
+    "maxPlus": 160.29,
+    "maxMinus": -68.46,
+    "aum": 19243,
+    "ter": 1.73,
+    "sparkline": [
+      100.0,
+      97.74,
+      96.2,
+      92.18,
+      85.98
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Erste Stock Global VT",
+    "provider": "ČS",
+    "ret5": 6.45,
+    "ret10": 6.39,
+    "retAll": 5.11,
+    "maxPlus": 63.21,
+    "maxMinus": -56.3,
+    "aum": 570758,
+    "ter": 2.09,
+    "sparkline": [
+      100.0,
+      111.35,
+      128.48,
+      138.37,
+      150.33
+    ]
+  },
+  {
+    "id": 5,
+    "name": "ERSTE RESPONSIBLE STOCK JAPAN VT",
+    "provider": "ČS",
+    "ret5": 4.99,
+    "ret10": 4.12,
+    "retAll": 2.1,
+    "maxPlus": 59.14,
+    "maxMinus": -41.34,
+    "aum": 54426,
+    "ter": 1.39,
+    "sparkline": [
+      100.0,
+      109.32,
+      116.59,
+      125.67,
+      138.66
+    ]
+  },
+  {
+    "id": 6,
+    "name": "ERSTE PORTFOLIO BOND EUROPE VT",
+    "provider": "ČS",
+    "ret5": -4.85,
+    "ret10": -1.84,
+    "retAll": 0.64,
+    "maxPlus": 18.45,
+    "maxMinus": -22.2,
+    "aum": 109935,
+    "ter": 0.84,
+    "sparkline": [
+      100.0,
+      111.78,
+      117.91,
+      130.48,
+      145.17
+    ]
+  },
+  {
+    "id": 7,
+    "name": "ERSTE BOND EUROPE HIGH YIELD VT",
+    "provider": "ČS",
+    "ret5": 0.36,
+    "ret10": 1.18,
+    "retAll": 3.10,
+    "maxPlus": 62.33,
+    "maxMinus": -35.84,
+    "aum": 416764,
+    "ter": 1.19,
+    "sparkline": [
+      100.0,
+      104.31,
+      114.81,
+      122.47,
+      125.79
+    ]
+  },
+  {
+    "id": 8,
+    "name": "ERSTE BOND DANUBIA VT",
+    "provider": "ČS",
+    "ret5": -5.14,
+    "ret10": -2.83,
+    "retAll": 0.91,
+    "maxPlus": 40.86,
+    "maxMinus": -30.12,
+    "aum": 53053,
+    "ter": 0.90,
+    "sparkline": [
+      100.0,
+      108.93,
+      123.5,
+      135.38,
+      146.76
+    ]
+  },
+  {
+    "id": 9,
+    "name": "ERSTE RESPONSIBLE STOCK AMERICA VT",
+    "provider": "ČS",
+    "ret5": 10.0,
+    "ret10": 10.28,
+    "retAll": 6.1,
+    "maxPlus": 87.46,
+    "maxMinus": -47.34,
+    "aum": 466823,
+    "ter": 1.39,
+    "sparkline": [
+      100.0,
+      103.94,
+      107.8,
+      110.17,
+      117.25
+    ]
+  },
+  {
+    "id": 10,
+    "name": "ERSTE WWF STOCK ENVIRONMENT VT",
+    "provider": "ČS",
+    "ret5": -8.21,
+    "ret10": 4.20,
+    "retAll": 2.64,
+    "maxPlus": 143.29,
+    "maxMinus": -48.02,
+    "aum": 495126,
+    "ter": 1.77,
+    "sparkline": [
+      100.0,
+      112.45,
+      125.29,
+      136.38,
+      146.89
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Sporoinvest",
+    "provider": "ČS",
+    "ret5": 3.12,
+    "ret10": 1.58,
+    "retAll": 2.7,
+    "maxPlus": 15.23,
+    "maxMinus": -3.53,
+    "aum": 60538,
+    "ter": 0.69,
+    "sparkline": [
+      100.0,
+      107.8,
+      116.69,
+      131.92,
+      141.23
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Sporobond",
+    "provider": "ČS",
+    "ret5": 0.68,
+    "ret10": 0.79,
+    "retAll": 3.27,
+    "maxPlus": 18.51,
+    "maxMinus": -14.61,
+    "aum": 56956,
+    "ter": 0.88,
+    "sparkline": [
+      100.0,
+      108.59,
+      115.27,
+      130.05,
+      139.83
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Trendbond",
+    "provider": "ČS",
+    "ret5": -2.72,
+    "ret10": -2.48,
+    "retAll": 0.33,
+    "maxPlus": 18.52,
+    "maxMinus": -26.65,
+    "aum": 215.6,
+    "ter": 1.80,
+    "sparkline": [
+      100.0,
+      107.96,
+      114.83,
+      115.79,
+      122.65
+    ]
+  },
+  {
+    "id": 14,
+    "name": "ČS korporátní dluhopisový",
+    "provider": "ČS",
+    "ret5": 1.43,
+    "ret10": 1.61,
+    "retAll": 2.27,
+    "maxPlus": 47.41,
+    "maxMinus": -27.05,
+    "aum": 28538,
+    "ter": 1.35,
+    "sparkline": [
+      100.0,
+      97.51,
+      95.88,
+      89.83,
+      88.74
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Sporotrend",
+    "provider": "ČS",
+    "ret5": 17.81,
+    "ret10": 9.93,
+    "retAll": 3.33,
+    "maxPlus": 183.41,
+    "maxMinus": -71.15,
+    "aum": 2757,
+    "ter": 2.27,
+    "sparkline": [
+      100.0,
+      110.86,
+      123.21,
+      135.38,
+      150.03
+    ]
+  },
+  {
+    "id": 16,
+    "name": "REICO NEMOVITOSTNÍ",
+    "provider": "ČS",
+    "ret5": 3.94,
+    "ret10": 3.43,
+    "retAll": 2.32,
+    "maxPlus": 8.98,
+    "maxMinus": -14.11,
+    "aum": 37047,
+    "ter": 1.91,
+    "sparkline": [
+      100.0,
+      106.84,
+      108.68,
+      123.73,
+      139.6
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Akciový Mix",
+    "provider": "ČS",
+    "ret5": 6.72,
+    "ret10": 5.73,
+    "retAll": 3.89,
+    "maxPlus": 60.21,
+    "maxMinus": -48.04,
+    "aum": 1298,
+    "ter": 1.70,
+    "sparkline": [
+      100.0,
+      98.97,
+      93.59,
+      92.77,
+      90.83
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Top Stocks",
+    "provider": "ČS",
+    "ret5": 5.82,
+    "ret10": 6.80,
+    "retAll": 7.86,
+    "maxPlus": 149.4,
+    "maxMinus": -66.06,
+    "aum": 33466,
+    "ter": 1.95,
+    "sparkline": [
+      100.0,
+      96.46,
+      89.74,
+      87.23,
+      85.01
+    ]
+  },
+  {
+    "id": 19,
+    "name": "High yield dluhopisový",
+    "provider": "ČS",
+    "ret5": 3.11,
+    "ret10": 2.87,
+    "retAll": 2.81,
+    "maxPlus": 69.11,
+    "maxMinus": -35.61,
+    "aum": 10829,
+    "ter": 1.54,
+    "sparkline": [
+      100.0,
+      110.17,
+      118.42,
+      128.82,
+      133.27
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Global Stocks FF",
+    "provider": "ČS",
+    "ret5": 6.78,
+    "ret10": 6.23,
+    "retAll": 0.83,
+    "maxPlus": 45.89,
+    "maxMinus": -48.03,
+    "aum": 2217,
+    "ter": 2.8,
+    "sparkline": [
+      100.0,
+      105.88,
+      115.57,
+      125.77,
+      135.26
+    ]
+  },
+  {
+    "id": 21,
+    "name": "S&P500 Market Cap Weighted (Acc)",
+    "provider": "VG",
+    "ret5": 16,
+    "ret10": 13.6,
+    "retAll": 10.7,
+    "maxPlus": null,
+    "maxMinus": null,
+    "aum": 25374,
+    "ter": 0.07,
+    "sparkline": [
+      100.0,
+      105.88,
+      115.57,
+      125.77,
+      135.26
+    ]
+  },
+  {
+    "id": 22,
+    "name": "S&P500 Market Cap Weighted (Acc)",
+    "provider": "BR",
+    "ret5": 16,
+    "ret10": 13.6,
+    "retAll": 10.7,
+    "maxPlus": null,
+    "maxMinus": null,
+    "aum": 25374,
+    "ter": 0.07,
+    "sparkline": [
+      100.0,
+      105.88,
+      115.57,
+      125.77,
+      135.26
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Konzervativní Mix",
+    "provider": "ČS",
+    "ret5": 3.04,
+    "ret10": 2.35,
+    "retAll": 1.70,
+    "maxPlus": 19.44,
+    "maxMinus": -18.24,
+    "aum": 22892,
+    "ter": 1.13,
+    "sparkline": [
+      100.0,
+      105.88,
+      115.57,
+      125.77,
+      135.26
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Vyvážený Mix",
+    "provider": "ČS",
+    "ret5": 3.47,
+    "ret10": 3.24,
+    "retAll": 2.16,
+    "maxPlus": 30.31,
+    "maxMinus": -28.33,
+    "aum": 4961,
+    "ter": 1.70,
+    "sparkline": [
+      100.0,
+      105.88,
+      115.57,
+      125.77,
+      135.26
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Dynamický Mix",
+    "provider": "ČS",
+    "ret5": 4.67,
+    "ret10": 3.99,
+    "retAll": 2.76,
+    "maxPlus": 45.41,
+    "maxMinus": -40.32,
+    "aum": 1456,
+    "ter": 2.27,
+    "sparkline": [
+      100.0,
+      105.88,
+      115.57,
+      125.77,
+      135.26
+    ]
+  }
+]
+
